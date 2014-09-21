@@ -1,0 +1,552 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{46CBF540-69BC-4628-8DCA-8FEE685F4613}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AutoExp</RootNamespace>
+    <AssemblyName>AutoExp</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ArcheBuddy">
+      <HintPath>..\..\..\..\ArcheBuddy_obfuscated\ArcheBuddy.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Host.cs" />
+    <Compile Include="Forms\Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Main.Designer.cs">
+      <DependentUpon>Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Common\CommonModule.cs" />
+    <Compile Include="Modules\Farm\FarmModule.cs" />
+    <Compile Include="Modules\Module.cs" />
+    <Compile Include="Modules\Movements\MovementModule.cs" />
+    <Compile Include="Modules\Quest\QuestModule.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Quests\Falcorth Plains\Level10\Quest_6353.cs" />
+    <Compile Include="Quests\Falcorth Plains\Level10\Quest_1436.cs" />
+    <Compile Include="Quests\Falcorth Plains\Level10\Quest_1433.cs" />
+    <Compile Include="Quests\Falcorth Plains\Level10\Quest_3445.cs" />
+    <Compile Include="Quests\Falcorth Plains\Level10\Quest_3444.cs" />
+    <Compile Include="Quests\Falcorth Plains\Level10\Quest_2537.cs" />
+    <Compile Include="Quests\Falcorth Plains\Level10\Quest_3443.cs" />
+    <Compile Include="Quests\Falcorth Plains\Level10\Quest_2535.cs" />
+    <Compile Include="Quests\Falcorth Plains\Level10\Quest_1440.cs" />
+    <Compile Include="Quests\Falcorth Plains\Level10\Quest_3442.cs" />
+    <Compile Include="Quests\Falcorth Plains\Level10\Quest_1237.cs" />
+    <Compile Include="Quests\Falcorth Plains\Level10\Quest_1439.cs" />
+    <Compile Include="Quests\Falcorth Plains\Level10\Quest_2328.cs" />
+    <Compile Include="Quests\Falcorth Plains\Level10\Quest_1438.cs" />
+    <Compile Include="Quests\Falcorth Plains\Level10\Quest_2533.cs" />
+    <Compile Include="Quests\Falcorth Plains\Level11\Quest_5145.cs" />
+    <Compile Include="Quests\Falcorth Plains\Level11\Quest_1437.cs" />
+    <Compile Include="Quests\Falcorth Plains\Level11\Quest_1441.cs" />
+    <Compile Include="Quests\Falcorth Plains\Level1\Quest_1212.cs" />
+    <Compile Include="Quests\Falcorth Plains\Level1\Quest_1213.cs" />
+    <Compile Include="Quests\Falcorth Plains\Level1\Quest_1573.cs" />
+    <Compile Include="Quests\Falcorth Plains\Level6\Quest_1241.cs" />
+    <Compile Include="Quests\Falcorth Plains\Level6\Quest_1240.cs" />
+    <Compile Include="Quests\Falcorth Plains\Level6\Quest_1301.cs" />
+    <Compile Include="Quests\Falcorth Plains\Level6\Quest_1570.cs" />
+    <Compile Include="Quests\Falcorth Plains\Level6\Quest_2315.cs" />
+    <Compile Include="Quests\Falcorth Plains\Level6\Quest_1234.cs" />
+    <Compile Include="Quests\Falcorth Plains\Level6\Quest_2538.cs" />
+    <Compile Include="Quests\Falcorth Plains\Level6\Quest_1644.cs" />
+    <Compile Include="Quests\Falcorth Plains\Level5\Quest_1233.cs" />
+    <Compile Include="Quests\Falcorth Plains\Level5\Quest_2309.cs" />
+    <Compile Include="Quests\Falcorth Plains\Level5\Quest_3437.cs" />
+    <Compile Include="Quests\Falcorth Plains\Level5\Quest_3436.cs" />
+    <Compile Include="Quests\Falcorth Plains\Level5\Quest_3435.cs" />
+    <Compile Include="Quests\Falcorth Plains\Level4\Quest_4289.cs" />
+    <Compile Include="Quests\Falcorth Plains\Level4\Quest_2300.cs" />
+    <Compile Include="Quests\Falcorth Plains\Level4\Quest_1222.cs" />
+    <Compile Include="Quests\Falcorth Plains\Level4\Quest_1216.cs" />
+    <Compile Include="Quests\Falcorth Plains\Level3\Quest_1215.cs" />
+    <Compile Include="Quests\Falcorth Plains\Level3\Quest_953.cs" />
+    <Compile Include="Quests\Falcorth Plains\Level2\Quest_1218.cs" />
+    <Compile Include="Quests\Falcorth Plains\Level2\Quest_1574.cs" />
+    <Compile Include="Quests\Falcorth Plains\Level2\Quest_4477.cs" />
+    <Compile Include="Quests\Falcorth Plains\Level7\Quest_1696.cs" />
+    <Compile Include="Quests\Falcorth Plains\Level7\Quest_3439.cs" />
+    <Compile Include="Quests\Falcorth Plains\Level7\Quest_1239.cs" />
+    <Compile Include="Quests\Falcorth Plains\Level7\Quest_1571.cs" />
+    <Compile Include="Quests\Falcorth Plains\Level7\Quest_3438.cs" />
+    <Compile Include="Quests\Falcorth Plains\Level7\Quest_1236.cs" />
+    <Compile Include="Quests\Falcorth Plains\Level8\Quest_1413.cs" />
+    <Compile Include="Quests\Falcorth Plains\Level8\Quest_1365.cs" />
+    <Compile Include="Quests\Falcorth Plains\Level8\Quest_1367.cs" />
+    <Compile Include="Quests\Falcorth Plains\Level8\Quest_1366.cs" />
+    <Compile Include="Quests\Falcorth Plains\Level8\Quest_1417.cs" />
+    <Compile Include="Quests\Falcorth Plains\Level8\Quest_1364.cs" />
+    <Compile Include="Quests\Falcorth Plains\Level8\Quest_1363.cs" />
+    <Compile Include="Quests\Falcorth Plains\Level8\Quest_1565.cs" />
+    <Compile Include="Quests\Falcorth Plains\Level8\Quest_2764.cs" />
+    <Compile Include="Quests\Falcorth Plains\Level8\Quest_3440.cs" />
+    <Compile Include="Quests\Falcorth Plains\Level9\Quest_6352.cs" />
+    <Compile Include="Quests\Falcorth Plains\Level9\Quest_4302.cs" />
+    <Compile Include="Quests\Falcorth Plains\Level9\Quest_4301.cs" />
+    <Compile Include="Quests\Falcorth Plains\Level9\Quest_4296.cs" />
+    <Compile Include="Quests\Falcorth Plains\Level9\Quest_2517.cs" />
+    <Compile Include="Quests\Falcorth Plains\Level9\Quest_2326.cs" />
+    <Compile Include="Quests\Falcorth Plains\Level9\Quest_1719.cs" />
+    <Compile Include="Quests\Falcorth Plains\Level9\Quest_1407.cs" />
+    <Compile Include="Quests\Falcorth Plains\Level9\Quest_1369.cs" />
+    <Compile Include="Quests\Mahadevi\Level15\Quest_861.cs" />
+    <Compile Include="Quests\Mahadevi\Level15\Quest_857.cs" />
+    <Compile Include="Quests\Mahadevi\Level15\Quest_2125.cs" />
+    <Compile Include="Quests\Mahadevi\Level15\Quest_2124.cs" />
+    <Compile Include="Quests\Mahadevi\Level15\Quest_2128.cs" />
+    <Compile Include="Quests\Mahadevi\Level16\Quest_2129.cs" />
+    <Compile Include="Quests\Mahadevi\Level16\Quest_3308.cs" />
+    <Compile Include="Quests\Mahadevi\Level16\Quest_3305.cs" />
+    <Compile Include="Quests\Mahadevi\Level16\Quest_3306.cs" />
+    <Compile Include="Quests\Mahadevi\Level16\Quest_3455.cs" />
+    <Compile Include="Quests\Mahadevi\Level16\Quest_3454.cs" />
+    <Compile Include="Quests\Mahadevi\Level16\Quest_3453.cs" />
+    <Compile Include="Quests\Mahadevi\Level16\Quest_858.cs" />
+    <Compile Include="Quests\Mahadevi\Level16\Quest_1500.cs" />
+    <Compile Include="Quests\Mahadevi\Level16\Quest_3307.cs" />
+    <Compile Include="Quests\Mahadevi\Level16\Quest_888.cs" />
+    <Compile Include="Quests\Mahadevi\Level16\Quest_893.cs" />
+    <Compile Include="Quests\Mahadevi\Level16\Quest_859.cs" />
+    <Compile Include="Quests\Mahadevi\Level16\Quest_908.cs" />
+    <Compile Include="Quests\Mahadevi\Level17\Quest_4036.cs" />
+    <Compile Include="Quests\Mahadevi\Level17\Quest_1686.cs" />
+    <Compile Include="Quests\Mahadevi\Level17\Quest_886.cs" />
+    <Compile Include="Quests\Mahadevi\Level17\Quest_1503.cs" />
+    <Compile Include="Quests\Mahadevi\Level17\Quest_2134.cs" />
+    <Compile Include="Quests\Mahadevi\Level17\Quest_3604.cs" />
+    <Compile Include="Quests\Mahadevi\Level17\Quest_1502.cs" />
+    <Compile Include="Quests\Mahadevi\Level17\Quest_2136.cs" />
+    <Compile Include="Quests\Mahadevi\Level17\Quest_2135.cs" />
+    <Compile Include="Quests\Mahadevi\Level17\Quest_3598.cs" />
+    <Compile Include="Quests\Mahadevi\Level17\Quest_2133.cs" />
+    <Compile Include="Quests\Mahadevi\Level17\Quest_1694.cs" />
+    <Compile Include="Quests\Mahadevi\Level17\Quest_3463.cs" />
+    <Compile Include="Quests\Mahadevi\Level17\Quest_885.cs" />
+    <Compile Include="Quests\Mahadevi\Level17\Quest_2898.cs" />
+    <Compile Include="Quests\Mahadevi\Level17\Quest_2897.cs" />
+    <Compile Include="Quests\Mahadevi\Level17\Quest_2896.cs" />
+    <Compile Include="Quests\Mahadevi\Level17\Quest_3462.cs" />
+    <Compile Include="Quests\Mahadevi\Level17\Quest_3461.cs" />
+    <Compile Include="Quests\Mahadevi\Level17\Quest_3460.cs" />
+    <Compile Include="Quests\Mahadevi\Level17\Quest_3459.cs" />
+    <Compile Include="Quests\Mahadevi\Level17\Quest_3457.cs" />
+    <Compile Include="Quests\Mahadevi\Level17\Quest_3491.cs" />
+    <Compile Include="Quests\Mahadevi\Level17\Quest_3456.cs" />
+    <Compile Include="Quests\Mahadevi\Level18\Quest_2903.cs" />
+    <Compile Include="Quests\Mahadevi\Level18\Quest_2904.cs" />
+    <Compile Include="Quests\Mahadevi\Level18\Quest_2138.cs" />
+    <Compile Include="Quests\Mahadevi\Level18\Quest_875.cs" />
+    <Compile Include="Quests\Mahadevi\Level18\Quest_874.cs" />
+    <Compile Include="Quests\Mahadevi\Level18\Quest_917.cs" />
+    <Compile Include="Quests\Mahadevi\Level18\Quest_880.cs" />
+    <Compile Include="Quests\Mahadevi\Level18\Quest_872.cs" />
+    <Compile Include="Quests\Mahadevi\Level18\Quest_879.cs" />
+    <Compile Include="Quests\Mahadevi\Level18\Quest_873.cs" />
+    <Compile Include="Quests\Mahadevi\Level18\Quest_871.cs" />
+    <Compile Include="Quests\Mahadevi\Level18\Quest_870.cs" />
+    <Compile Include="Quests\Mahadevi\Level18\Quest_876.cs" />
+    <Compile Include="Quests\Mahadevi\Level18\Quest_1507.cs" />
+    <Compile Include="Quests\Mahadevi\Level18\Quest_1505.cs" />
+    <Compile Include="Quests\Mahadevi\Level18\Quest_2901.cs" />
+    <Compile Include="Quests\Mahadevi\Level18\Quest_2902.cs" />
+    <Compile Include="Quests\Mahadevi\Level18\Quest_3310.cs" />
+    <Compile Include="Quests\Mahadevi\Level18\Quest_3309.cs" />
+    <Compile Include="Quests\Mahadevi\Level18\Quest_1504.cs" />
+    <Compile Include="Quests\Mahadevi\Level18\Quest_1687.cs" />
+    <Compile Include="Quests\Mahadevi\Level18\Quest_4035.cs" />
+    <Compile Include="Quests\Mahadevi\Level19\Quest_3609.cs" />
+    <Compile Include="Quests\Mahadevi\Level19\Quest_1517.cs" />
+    <Compile Include="Quests\Mahadevi\Level19\Quest_900.cs" />
+    <Compile Include="Quests\Mahadevi\Level19\Quest_2906.cs" />
+    <Compile Include="Quests\Mahadevi\Level19\Quest_877.cs" />
+    <Compile Include="Quests\Mahadevi\Level19\Quest_2139.cs" />
+    <Compile Include="Quests\Mahadevi\Level19\Quest_1691.cs" />
+    <Compile Include="Quests\Mahadevi\Level19\Quest_1511.cs" />
+    <Compile Include="Quests\Mahadevi\Level19\Quest_1514.cs" />
+    <Compile Include="Quests\Mahadevi\Level19\Quest_1512.cs" />
+    <Compile Include="Quests\Mahadevi\Level19\Quest_925.cs" />
+    <Compile Include="Quests\Mahadevi\Level19\Quest_899.cs" />
+    <Compile Include="Quests\Mahadevi\Level19\Quest_1510.cs" />
+    <Compile Include="Quests\Mahadevi\Level19\Quest_1509.cs" />
+    <Compile Include="Quests\Mahadevi\Level19\Quest_1508.cs" />
+    <Compile Include="Quests\Mahadevi\Level19\Quest_863.cs" />
+    <Compile Include="Quests\Mahadevi\Level19\Quest_3606.cs" />
+    <Compile Include="Quests\Mahadevi\Level20\Quest_3312.cs" />
+    <Compile Include="Quests\Mahadevi\Level20\Quest_3313.cs" />
+    <Compile Include="Quests\Mahadevi\Level20\Quest_878.cs" />
+    <Compile Include="Quests\Mahadevi\Level20\Quest_4311.cs" />
+    <Compile Include="Quests\Old Forest\Level27\Quest_1321.cs" />
+    <Compile Include="Quests\Old Forest\Level27\Quest_1488.cs" />
+    <Compile Include="Quests\Old Forest\Level27\Quest_1490.cs" />
+    <Compile Include="Quests\Old Forest\Level27\Quest_1489.cs" />
+    <Compile Include="Quests\Old Forest\Level27\Quest_3906.cs" />
+    <Compile Include="Quests\Old Forest\Level27\Quest_1323.cs" />
+    <Compile Include="Quests\Old Forest\Level27\Quest_2561.cs" />
+    <Compile Include="Quests\Old Forest\Level27\Quest_2560.cs" />
+    <Compile Include="Quests\Old Forest\Level27\Quest_1330.cs" />
+    <Compile Include="Quests\Old Forest\Level27\Quest_2087.cs" />
+    <Compile Include="Quests\Old Forest\Level27\Quest_1315.cs" />
+    <Compile Include="Quests\Old Forest\Level27\Quest_1317.cs" />
+    <Compile Include="Quests\Old Forest\Level27\Quest_1329.cs" />
+    <Compile Include="Quests\Old Forest\Level27\Quest_2559.cs" />
+    <Compile Include="Quests\Old Forest\Level27\Quest_1314.cs" />
+    <Compile Include="Quests\Old Forest\Level27\Quest_1316.cs" />
+    <Compile Include="Quests\Old Forest\Level27\Quest_1834.cs" />
+    <Compile Include="Quests\Old Forest\Level27\Quest_1320.cs" />
+    <Compile Include="Quests\Old Forest\Level27\Quest_3480.cs" />
+    <Compile Include="Quests\Old Forest\Level27\Quest_1308.cs" />
+    <Compile Include="Quests\Old Forest\Level27\Quest_1307.cs" />
+    <Compile Include="Quests\Old Forest\Level27\Quest_1306.cs" />
+    <Compile Include="Quests\Old Forest\Level27\Quest_1310.cs" />
+    <Compile Include="Quests\Old Forest\Level27\Quest_2060.cs" />
+    <Compile Include="Quests\Old Forest\Level27\Quest_1313.cs" />
+    <Compile Include="Quests\Old Forest\Level27\Quest_1312.cs" />
+    <Compile Include="Quests\Old Forest\Level27\Quest_1311.cs" />
+    <Compile Include="Quests\Old Forest\Level27\Quest_1322.cs" />
+    <Compile Include="Quests\Old Forest\Level27\Quest_3905.cs" />
+    <Compile Include="Quests\Old Forest\Level27\Quest_1304.cs" />
+    <Compile Include="Quests\Old Forest\Level27\Quest_1305.cs" />
+    <Compile Include="Quests\Old Forest\Level27\Quest_1303.cs" />
+    <Compile Include="Quests\Old Forest\Level28\Quest_1743.cs" />
+    <Compile Include="Quests\Old Forest\Level28\Quest_1345.cs" />
+    <Compile Include="Quests\Old Forest\Level28\Quest_1493.cs" />
+    <Compile Include="Quests\Old Forest\Level28\Quest_1492.cs" />
+    <Compile Include="Quests\Old Forest\Level28\Quest_1344.cs" />
+    <Compile Include="Quests\Old Forest\Level28\Quest_1744.cs" />
+    <Compile Include="Quests\Old Forest\Level28\Quest_1343.cs" />
+    <Compile Include="Quests\Old Forest\Level28\Quest_1342.cs" />
+    <Compile Include="Quests\Old Forest\Level28\Quest_1339.cs" />
+    <Compile Include="Quests\Old Forest\Level28\Quest_2696.cs" />
+    <Compile Include="Quests\Old Forest\Level28\Quest_1341.cs" />
+    <Compile Include="Quests\Old Forest\Level28\Quest_1337.cs" />
+    <Compile Include="Quests\Old Forest\Level28\Quest_1340.cs" />
+    <Compile Include="Quests\Old Forest\Level28\Quest_2695.cs" />
+    <Compile Include="Quests\Old Forest\Level28\Quest_1338.cs" />
+    <Compile Include="Quests\Old Forest\Level28\Quest_1335.cs" />
+    <Compile Include="Quests\Old Forest\Level28\Quest_1346.cs" />
+    <Compile Include="Quests\Old Forest\Level28\Quest_1334.cs" />
+    <Compile Include="Quests\Old Forest\Level28\Quest_2052.cs" />
+    <Compile Include="Quests\Old Forest\Level28\Quest_2051.cs" />
+    <Compile Include="Quests\Old Forest\Level28\Quest_2048.cs" />
+    <Compile Include="Quests\Old Forest\Level28\Quest_2047.cs" />
+    <Compile Include="Quests\Old Forest\Level28\Quest_2049.cs" />
+    <Compile Include="Quests\Old Forest\Level28\Quest_1331.cs" />
+    <Compile Include="Quests\Old Forest\Level28\Quest_1332.cs" />
+    <Compile Include="Quests\Old Forest\Level28\Quest_3908.cs" />
+    <Compile Include="Quests\Old Forest\Level28\Quest_3483.cs" />
+    <Compile Include="Quests\Old Forest\Level28\Quest_3482.cs" />
+    <Compile Include="Quests\Old Forest\Level28\Quest_3481.cs" />
+    <Compile Include="Quests\Old Forest\Level28\Quest_1491.cs" />
+    <Compile Include="Quests\Old Forest\Level29\Quest_1348.cs" />
+    <Compile Include="Quests\Old Forest\Level29\Quest_1494.cs" />
+    <Compile Include="Quests\Old Forest\Level29\Quest_1745.cs" />
+    <Compile Include="Quests\Old Forest\Level29\Quest_3909.cs" />
+    <Compile Include="Quests\Old Forest\Level29\Quest_2106.cs" />
+    <Compile Include="Quests\Old Forest\Level29\Quest_2767.cs" />
+    <Compile Include="Quests\Old Forest\Level29\Quest_2907.cs" />
+    <Compile Include="Quests\Old Forest\Level29\Quest_2697.cs" />
+    <Compile Include="Quests\Quest.cs" />
+    <Compile Include="Quests\Singing Land\Level24\Quest_1860.cs" />
+    <Compile Include="Quests\Singing Land\Level24\Quest_796.cs" />
+    <Compile Include="Quests\Singing Land\Level24\Quest_810.cs" />
+    <Compile Include="Quests\Singing Land\Level24\Quest_809.cs" />
+    <Compile Include="Quests\Singing Land\Level24\Quest_802.cs" />
+    <Compile Include="Quests\Singing Land\Level24\Quest_797.cs" />
+    <Compile Include="Quests\Singing Land\Level24\Quest_800.cs" />
+    <Compile Include="Quests\Singing Land\Level24\Quest_799.cs" />
+    <Compile Include="Quests\Singing Land\Level24\Quest_1864.cs" />
+    <Compile Include="Quests\Singing Land\Level24\Quest_1863.cs" />
+    <Compile Include="Quests\Singing Land\Level24\Quest_1861.cs" />
+    <Compile Include="Quests\Singing Land\Level24\Quest_798.cs" />
+    <Compile Include="Quests\Singing Land\Level24\Quest_813.cs" />
+    <Compile Include="Quests\Singing Land\Level24\Quest_801.cs" />
+    <Compile Include="Quests\Singing Land\Level24\Quest_2045.cs" />
+    <Compile Include="Quests\Singing Land\Level24\Quest_855.cs" />
+    <Compile Include="Quests\Singing Land\Level24\Quest_1859.cs" />
+    <Compile Include="Quests\Singing Land\Level24\Quest_1858.cs" />
+    <Compile Include="Quests\Singing Land\Level24\Quest_1857.cs" />
+    <Compile Include="Quests\Singing Land\Level26\Quest_1865.cs" />
+    <Compile Include="Quests\Singing Land\Level26\Quest_848.cs" />
+    <Compile Include="Quests\Singing Land\Level26\Quest_847.cs" />
+    <Compile Include="Quests\Singing Land\Level26\Quest_854.cs" />
+    <Compile Include="Quests\Singing Land\Level26\Quest_853.cs" />
+    <Compile Include="Quests\Singing Land\Level26\Quest_852.cs" />
+    <Compile Include="Quests\Singing Land\Level26\Quest_851.cs" />
+    <Compile Include="Quests\Singing Land\Level26\Quest_845.cs" />
+    <Compile Include="Quests\Singing Land\Level26\Quest_856.cs" />
+    <Compile Include="Quests\Singing Land\Level26\Quest_1415.cs" />
+    <Compile Include="Quests\Singing Land\Level26\Quest_1435.cs" />
+    <Compile Include="Quests\Singing Land\Level26\Quest_846.cs" />
+    <Compile Include="Quests\Singing Land\Level26\Quest_963.cs" />
+    <Compile Include="Quests\Singing Land\Level26\Quest_906.cs" />
+    <Compile Include="Quests\Singing Land\Level26\Quest_1463.cs" />
+    <Compile Include="Quests\Singing Land\Level26\Quest_1851.cs" />
+    <Compile Include="Quests\Singing Land\Level26\Quest_840.cs" />
+    <Compile Include="Quests\Singing Land\Level26\Quest_1464.cs" />
+    <Compile Include="Quests\Singing Land\Level26\Quest_844.cs" />
+    <Compile Include="Quests\Singing Land\Level26\Quest_842.cs" />
+    <Compile Include="Quests\Singing Land\Level26\Quest_843.cs" />
+    <Compile Include="Quests\Singing Land\Level26\Quest_839.cs" />
+    <Compile Include="Quests\Singing Land\Level26\Quest_841.cs" />
+    <Compile Include="Quests\Singing Land\Level26\Quest_1854.cs" />
+    <Compile Include="Quests\Singing Land\Level25\Quest_829.cs" />
+    <Compile Include="Quests\Singing Land\Level25\Quest_1856.cs" />
+    <Compile Include="Quests\Singing Land\Level25\Quest_812.cs" />
+    <Compile Include="Quests\Singing Land\Level25\Quest_1876.cs" />
+    <Compile Include="Quests\Singing Land\Level25\Quest_816.cs" />
+    <Compile Include="Quests\Singing Land\Level25\Quest_3479.cs" />
+    <Compile Include="Quests\Singing Land\Level25\Quest_3478.cs" />
+    <Compile Include="Quests\Singing Land\Level25\Quest_3476.cs" />
+    <Compile Include="Quests\Singing Land\Level25\Quest_3475.cs" />
+    <Compile Include="Quests\Singing Land\Level25\Quest_3474.cs" />
+    <Compile Include="Quests\Singing Land\Level25\Quest_1852.cs" />
+    <Compile Include="Quests\Singing Land\Level25\Quest_1227.cs" />
+    <Compile Include="Quests\Singing Land\Level25\Quest_815.cs" />
+    <Compile Include="Quests\Singing Land\Level25\Quest_826.cs" />
+    <Compile Include="Quests\Singing Land\Level25\Quest_821.cs" />
+    <Compile Include="Quests\Singing Land\Level25\Quest_823.cs" />
+    <Compile Include="Quests\Singing Land\Level25\Quest_822.cs" />
+    <Compile Include="Quests\Singing Land\Level25\Quest_818.cs" />
+    <Compile Include="Quests\Singing Land\Level25\Quest_825.cs" />
+    <Compile Include="Quests\Singing Land\Level25\Quest_824.cs" />
+    <Compile Include="Quests\Singing Land\Level25\Quest_820.cs" />
+    <Compile Include="Quests\Singing Land\Level25\Quest_819.cs" />
+    <Compile Include="Quests\Singing Land\Level25\Quest_2057.cs" />
+    <Compile Include="Quests\Singing Land\Level25\Quest_811.cs" />
+    <Compile Include="Quests\Singing Land\Level25\Quest_817.cs" />
+    <Compile Include="Quests\Singing Land\Level25\Quest_837.cs" />
+    <Compile Include="Quests\Singing Land\Level25\Quest_838.cs" />
+    <Compile Include="Quests\Singing Land\Level25\Quest_834.cs" />
+    <Compile Include="Quests\Singing Land\Level25\Quest_832.cs" />
+    <Compile Include="Quests\Singing Land\Level25\Quest_831.cs" />
+    <Compile Include="Quests\Singing Land\Level25\Quest_835.cs" />
+    <Compile Include="Quests\Singing Land\Level25\Quest_836.cs" />
+    <Compile Include="Quests\Singing Land\Level25\Quest_830.cs" />
+    <Compile Include="Quests\Singing Land\Level25\Quest_833.cs" />
+    <Compile Include="Quests\Singing Land\Level25\Quest_849.cs" />
+    <Compile Include="Quests\Singing Land\Level25\Quest_807.cs" />
+    <Compile Include="Quests\Singing Land\Level25\Quest_806.cs" />
+    <Compile Include="Quests\Singing Land\Level25\Quest_3473.cs" />
+    <Compile Include="Quests\Solis Headlands\Level20\Quest_3646.cs" />
+    <Compile Include="Quests\Solis Headlands\Level20\Quest_3645.cs" />
+    <Compile Include="Quests\Solis Headlands\Level20\Quest_949.cs" />
+    <Compile Include="Quests\Solis Headlands\Level20\Quest_943.cs" />
+    <Compile Include="Quests\Solis Headlands\Level20\Quest_942.cs" />
+    <Compile Include="Quests\Solis Headlands\Level20\Quest_951.cs" />
+    <Compile Include="Quests\Solis Headlands\Level20\Quest_1731.cs" />
+    <Compile Include="Quests\Solis Headlands\Level20\Quest_1667.cs" />
+    <Compile Include="Quests\Solis Headlands\Level20\Quest_1668.cs" />
+    <Compile Include="Quests\Solis Headlands\Level21\Quest_1676.cs" />
+    <Compile Include="Quests\Solis Headlands\Level21\Quest_1679.cs" />
+    <Compile Include="Quests\Solis Headlands\Level21\Quest_1678.cs" />
+    <Compile Include="Quests\Solis Headlands\Level21\Quest_1677.cs" />
+    <Compile Include="Quests\Solis Headlands\Level21\Quest_755.cs" />
+    <Compile Include="Quests\Solis Headlands\Level21\Quest_3658.cs" />
+    <Compile Include="Quests\Solis Headlands\Level21\Quest_754.cs" />
+    <Compile Include="Quests\Solis Headlands\Level21\Quest_753.cs" />
+    <Compile Include="Quests\Solis Headlands\Level21\Quest_1675.cs" />
+    <Compile Include="Quests\Solis Headlands\Level21\Quest_756.cs" />
+    <Compile Include="Quests\Solis Headlands\Level21\Quest_3707.cs" />
+    <Compile Include="Quests\Solis Headlands\Level21\Quest_4443.cs" />
+    <Compile Include="Quests\Solis Headlands\Level21\Quest_750.cs" />
+    <Compile Include="Quests\Solis Headlands\Level21\Quest_3653.cs" />
+    <Compile Include="Quests\Solis Headlands\Level21\Quest_766.cs" />
+    <Compile Include="Quests\Solis Headlands\Level21\Quest_765.cs" />
+    <Compile Include="Quests\Solis Headlands\Level21\Quest_764.cs" />
+    <Compile Include="Quests\Solis Headlands\Level21\Quest_752.cs" />
+    <Compile Include="Quests\Solis Headlands\Level21\Quest_3652.cs" />
+    <Compile Include="Quests\Solis Headlands\Level21\Quest_3651.cs" />
+    <Compile Include="Quests\Solis Headlands\Level21\Quest_3649.cs" />
+    <Compile Include="Quests\Solis Headlands\Level21\Quest_3467.cs" />
+    <Compile Include="Quests\Solis Headlands\Level21\Quest_3450.cs" />
+    <Compile Include="Quests\Solis Headlands\Level21\Quest_3466.cs" />
+    <Compile Include="Quests\Solis Headlands\Level21\Quest_3464.cs" />
+    <Compile Include="Quests\Solis Headlands\Level21\Quest_748.cs" />
+    <Compile Include="Quests\Solis Headlands\Level21\Quest_950.cs" />
+    <Compile Include="Quests\Solis Headlands\Level22\Quest_3472.cs" />
+    <Compile Include="Quests\Solis Headlands\Level22\Quest_3471.cs" />
+    <Compile Include="Quests\Solis Headlands\Level22\Quest_3470.cs" />
+    <Compile Include="Quests\Solis Headlands\Level22\Quest_3469.cs" />
+    <Compile Include="Quests\Solis Headlands\Level22\Quest_3661.cs" />
+    <Compile Include="Quests\Solis Headlands\Level22\Quest_3667.cs" />
+    <Compile Include="Quests\Solis Headlands\Level22\Quest_3468.cs" />
+    <Compile Include="Quests\Solis Headlands\Level22\Quest_3674.cs" />
+    <Compile Include="Quests\Solis Headlands\Level22\Quest_3672.cs" />
+    <Compile Include="Quests\Solis Headlands\Level22\Quest_3670.cs" />
+    <Compile Include="Quests\Solis Headlands\Level22\Quest_3669.cs" />
+    <Compile Include="Quests\Solis Headlands\Level22\Quest_3668.cs" />
+    <Compile Include="Quests\Solis Headlands\Level22\Quest_3666.cs" />
+    <Compile Include="Quests\Solis Headlands\Level22\Quest_3664.cs" />
+    <Compile Include="Quests\Solis Headlands\Level22\Quest_3663.cs" />
+    <Compile Include="Quests\Solis Headlands\Level22\Quest_3660.cs" />
+    <Compile Include="Quests\Solis Headlands\Level22\Quest_1732.cs" />
+    <Compile Include="Quests\Solis Headlands\Level22\Quest_3657.cs" />
+    <Compile Include="Quests\Solis Headlands\Level23\Quest_1688.cs" />
+    <Compile Include="Quests\Solis Headlands\Level23\Quest_795.cs" />
+    <Compile Include="Quests\Solis Headlands\Level23\Quest_3700.cs" />
+    <Compile Include="Quests\Solis Headlands\Level23\Quest_788.cs" />
+    <Compile Include="Quests\Solis Headlands\Level23\Quest_3699.cs" />
+    <Compile Include="Quests\Solis Headlands\Level23\Quest_1682.cs" />
+    <Compile Include="Quests\Solis Headlands\Level23\Quest_793.cs" />
+    <Compile Include="Quests\Solis Headlands\Level23\Quest_785.cs" />
+    <Compile Include="Quests\Solis Headlands\Level23\Quest_792.cs" />
+    <Compile Include="Quests\Solis Headlands\Level23\Quest_776.cs" />
+    <Compile Include="Quests\Solis Headlands\Level23\Quest_777.cs" />
+    <Compile Include="Quests\Solis Headlands\Level23\Quest_3693.cs" />
+    <Compile Include="Quests\Solis Headlands\Level23\Quest_3692.cs" />
+    <Compile Include="Quests\Solis Headlands\Level23\Quest_3696.cs" />
+    <Compile Include="Quests\Solis Headlands\Level23\Quest_3691.cs" />
+    <Compile Include="Quests\Solis Headlands\Level23\Quest_3704.cs" />
+    <Compile Include="Quests\Solis Headlands\Level23\Quest_3701.cs" />
+    <Compile Include="Quests\Solis Headlands\Level23\Quest_3690.cs" />
+    <Compile Include="Quests\Solis Headlands\Level23\Quest_3689.cs" />
+    <Compile Include="Quests\Solis Headlands\Level23\Quest_3686.cs" />
+    <Compile Include="Quests\Solis Headlands\Level23\Quest_3683.cs" />
+    <Compile Include="Quests\Solis Headlands\Level23\Quest_775.cs" />
+    <Compile Include="Quests\Solis Headlands\Level23\Quest_774.cs" />
+    <Compile Include="Quests\Solis Headlands\Level23\Quest_3680.cs" />
+    <Compile Include="Quests\Solis Headlands\Level23\Quest_3679.cs" />
+    <Compile Include="Quests\Solis Headlands\Level23\Quest_782.cs" />
+    <Compile Include="Quests\Solis Headlands\Level23\Quest_783.cs" />
+    <Compile Include="Quests\Solis Headlands\Level23\Quest_773.cs" />
+    <Compile Include="Quests\Solis Headlands\Level23\Quest_3675.cs" />
+    <Compile Include="Quests\Solis Headlands\Level23\Quest_947.cs" />
+    <Compile Include="Quests\Solis Headlands\Level23\Quest_1709.cs" />
+    <Compile Include="Quests\Solis Headlands\Level23\Quest_784.cs" />
+    <Compile Include="Quests\Solis Headlands\Level23\Quest_3678.cs" />
+    <Compile Include="Quests\Solis Headlands\Level23\Quest_3677.cs" />
+    <Compile Include="Quests\Tigerspine Mountains\Level12\Quest_1061.cs" />
+    <Compile Include="Quests\Tigerspine Mountains\Level12\Quest_1055.cs" />
+    <Compile Include="Quests\Tigerspine Mountains\Level12\Quest_1062.cs" />
+    <Compile Include="Quests\Tigerspine Mountains\Level12\Quest_6031.cs" />
+    <Compile Include="Quests\Tigerspine Mountains\Level12\Quest_1068.cs" />
+    <Compile Include="Quests\Tigerspine Mountains\Level12\Quest_1066.cs" />
+    <Compile Include="Quests\Tigerspine Mountains\Level12\Quest_1065.cs" />
+    <Compile Include="Quests\Tigerspine Mountains\Level12\Quest_1064.cs" />
+    <Compile Include="Quests\Tigerspine Mountains\Level12\Quest_1058 .cs" />
+    <Compile Include="Quests\Tigerspine Mountains\Level12\Quest_1054.cs" />
+    <Compile Include="Quests\Tigerspine Mountains\Level12\Quest_3446.cs" />
+    <Compile Include="Quests\Tigerspine Mountains\Level12\Quest_1053.cs" />
+    <Compile Include="Quests\Tigerspine Mountains\Level12\Quest_1060.cs" />
+    <Compile Include="Quests\Tigerspine Mountains\Level12\Quest_1059.cs" />
+    <Compile Include="Quests\Tigerspine Mountains\Level12\Quest_1052.cs" />
+    <Compile Include="Quests\Tigerspine Mountains\Level12\Quest_1051.cs" />
+    <Compile Include="Quests\Tigerspine Mountains\Level11\Quest_1084.cs" />
+    <Compile Include="Quests\Tigerspine Mountains\Level11\Quest_1050.cs" />
+    <Compile Include="Quests\Tigerspine Mountains\Level11\Quest_1049.cs" />
+    <Compile Include="Quests\Tigerspine Mountains\Level11\Quest_4438.cs" />
+    <Compile Include="Quests\Tigerspine Mountains\Level11\Quest_4439.cs" />
+    <Compile Include="Quests\Tigerspine Mountains\Level11\Quest_4424.cs" />
+    <Compile Include="Quests\Tigerspine Mountains\Level11\Quest_4417.cs" />
+    <Compile Include="Quests\Tigerspine Mountains\Level11\Quest_4479.cs" />
+    <Compile Include="Quests\Tigerspine Mountains\Level11\Quest_4415.cs" />
+    <Compile Include="Quests\Tigerspine Mountains\Level11\Quest_4862.cs" />
+    <Compile Include="Quests\Tigerspine Mountains\Level11\Quest_1572.cs" />
+    <Compile Include="Quests\Tigerspine Mountains\Level11\Quest_1257.cs" />
+    <Compile Include="Quests\Tigerspine Mountains\Level11\Quest_1254.cs" />
+    <Compile Include="Quests\Tigerspine Mountains\Level11\Quest_1476.cs" />
+    <Compile Include="Quests\Tigerspine Mountains\Level11\Quest_1048.cs" />
+    <Compile Include="Quests\Tigerspine Mountains\Level13\Quest_1071.cs" />
+    <Compile Include="Quests\Tigerspine Mountains\Level13\Quest_2423.cs" />
+    <Compile Include="Quests\Tigerspine Mountains\Level13\Quest_1171.cs" />
+    <Compile Include="Quests\Tigerspine Mountains\Level13\Quest_1076.cs" />
+    <Compile Include="Quests\Tigerspine Mountains\Level13\Quest_1070.cs" />
+    <Compile Include="Quests\Tigerspine Mountains\Level13\Quest_1075.cs" />
+    <Compile Include="Quests\Tigerspine Mountains\Level13\Quest_1172.cs" />
+    <Compile Include="Quests\Tigerspine Mountains\Level13\Quest_3449.cs" />
+    <Compile Include="Quests\Tigerspine Mountains\Level13\Quest_3448.cs" />
+    <Compile Include="Quests\Tigerspine Mountains\Level13\Quest_3447.cs" />
+    <Compile Include="Quests\Tigerspine Mountains\Level13\Quest_1445.cs" />
+    <Compile Include="Quests\Tigerspine Mountains\Level13\Quest_1069.cs" />
+    <Compile Include="Quests\Tigerspine Mountains\Level14\Quest_1106.cs" />
+    <Compile Include="Quests\Tigerspine Mountains\Level14\Quest_1105.cs" />
+    <Compile Include="Quests\Tigerspine Mountains\Level14\Quest_1096.cs" />
+    <Compile Include="Quests\Tigerspine Mountains\Level14\Quest_1104 .cs" />
+    <Compile Include="Quests\Tigerspine Mountains\Level14\Quest_1094.cs" />
+    <Compile Include="Quests\Tigerspine Mountains\Level14\Quest_1093.cs" />
+    <Compile Include="Quests\Tigerspine Mountains\Level14\Quest_1088.cs" />
+    <Compile Include="Quests\Tigerspine Mountains\Level14\Quest_1102.cs" />
+    <Compile Include="Quests\Tigerspine Mountains\Level14\Quest_1092.cs" />
+    <Compile Include="Quests\Tigerspine Mountains\Level14\Quest_1090.cs" />
+    <Compile Include="Quests\Tigerspine Mountains\Level14\Quest_1073.cs" />
+    <Compile Include="Quests\Tigerspine Mountains\Level14\Quest_3452.cs" />
+    <Compile Include="Quests\Tigerspine Mountains\Level14\Quest_3451.cs" />
+    <Compile Include="Quests\Tigerspine Mountains\Level14\Quest_2425.cs" />
+    <Compile Include="Quests\Tigerspine Mountains\Level14\Quest_6216.cs" />
+    <Compile Include="Quests\Tigerspine Mountains\Level14\Quest_6214.cs" />
+    <Compile Include="Quests\Tigerspine Mountains\Level14\Quest_1077.cs" />
+    <Compile Include="Quests\Tigerspine Mountains\Level14\Quest_1174.cs" />
+    <Compile Include="Quests\Tigerspine Mountains\Level14\Quest_1063.cs" />
+    <Compile Include="Quests\Tigerspine Mountains\Level14\Quest_1080.cs" />
+    <Compile Include="Quests\Tigerspine Mountains\Level14\Quest_1085.cs" />
+    <Compile Include="Quests\Tigerspine Mountains\Level14\Quest_1083.cs" />
+    <Compile Include="Quests\Tigerspine Mountains\Level14\Quest_1086.cs" />
+    <Compile Include="Quests\Tigerspine Mountains\Level14\Quest_1081.cs" />
+    <Compile Include="Quests\Tigerspine Mountains\Level14\Quest_1078.cs" />
+    <Compile Include="Quests\Tigerspine Mountains\Level14\Quest_2424.cs" />
+    <Compile Include="Quests\Tigerspine Mountains\Level15\Quest_1107.cs" />
+    <Compile Include="Quests\Tigerspine Mountains\Level15\Quest_1109.cs" />
+    <Compile Include="Quests\Tigerspine Mountains\Level15\Quest_1098.cs" />
+    <Compile Include="Quests\Tigerspine Mountains\Level15\Quest_1100.cs" />
+    <Compile Include="Quests\Tigerspine Mountains\Level15\Quest_1108.cs" />
+    <Compile Include="Quests\Tigerspine Mountains\Level15\Quest_1099.cs" />
+    <Compile Include="Quests\Tigerspine Mountains\Level15\Quest_1111.cs" />
+    <Compile Include="Quests\Tigerspine Mountains\Level15\Quest_1110.cs" />
+    <Compile Include="Quests\Tigerspine Mountains\Level15\Quest_1095.cs" />
+    <Compile Include="Quests\Tigerspine Mountains\Level15\Quest_1175.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <EmbeddedResource Include="Forms\Main.resx">
+      <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
